@@ -1,0 +1,144 @@
+@CHARSET "UTF-8";
+
+/*--------メニュータグ----------*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+.snip1211 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.snip1211 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1211 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 2.5em;
+  padding: 0;
+}
+.snip1211 a {
+  padding: 0.4em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.snip1211 a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #FF0033;
+  border-bottom: 1px solid #FF0033;
+}
+.snip1211 a:hover,
+.snip1211 .current a {
+  color: #FF0033;
+}
+.snip1211 a:hover:before,
+.snip1211 .current a:before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+/*------- 通常タグ -------- */
+body {
+  background-color: #212121;
+}
+
+h1{
+	color:white;
+	font-size: 38px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+h2{
+	margin-left: 20px;
+	color: white;
+	display: block;
+}
+p{
+	margin-left: 20px;
+}
+
+/*------- クラスタグ --------*/
+.main{
+	clear:both;
+}
+
+.main-container{
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.left{
+	float:left;
+	background-color:#212121;
+	width: 50%;
+	height: 480px;
+	matrgin-top: 40px;
+}
+
+.right{
+	float:left;
+	width: 45%;
+	height: 400px;
+	mergin:bottom: 40px;
+	background-color:#212121;
+}
+/* ---スライドショーの白枠消し*/
+.bx-wrapper {
+  margin: 0 !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+.list{
+	color: white;
+	font-size: 18px;
+}
+
+.container {
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+/* ------ボタン-------*/
+.btn-border {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid white;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.btn-border:hover {
+  background-color: white;
+  border-color: white;
+  color: #FF0033;
+}

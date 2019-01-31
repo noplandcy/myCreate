@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Strutsの詳細設定 -->
+
+<struts>
+	<constant name="struts.devMode"	value="true" />
+<!-- 対象のpackageを指定 -->
+	<package name="com.internousdev.ecsiteweb.action" extends="struts-default">
+
+	<!-- HomeAction -->
+<action name="HomeAction" class="com.internousdev.ecsiteweb.action.HomeAction" method="execute">
+<result name="success">home.jsp</result>
+</action>
+
+	<!-- ProductsAction -->
+<action name="ProductsAction" class="com.internousdev.ecsiteweb.action.ProductsAction" method="execute">
+<result name="success">products.jsp</result>
+</action>
+
+	<!-- CompanyAction -->
+<action name="CompanyAction" class="com.internousdev.ecsiteweb.action.CompanyAction" method="execute">
+<result name="success">company.jsp</result>
+</action>
+
+	<!-- ContactAction -->
+<action name="ContactAction" class="com.internousdev.ecsiteweb.action.ContactAction" method="execute">
+<result name="success">contact.jsp</result>
+</action>
+
+</package>
+</struts>
